@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=League+Spartan&display=swap" rel="stylesheet">
+    <title>Formulario de Pedido</title>
+</head>
+<header>
+    <h1>¡Bienvenido a tu pastelería favorita!</h1>
+    <div class="navBar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="formulario.html">Realizar Pedido</a></li>
+                <li><a href="admin.html">Administrar</a></li>
+            </ul>
+        </nav>
+    </div> <!--NavBar-->
+</header>
+<br>
+<div class="logo">
+    <img src="/img/logo.png" alt="logo" width="300px" height="300px">
+</div>
+<body>
+    <form>
+        <section class="datosUsuario">
+            <h2>Llena con tus datos</h2>
+            Nombre: <input type="text" name="nombre" required><br>
+            Apellido: <input type="text" name="apellido" required><br>
+            Número de teléfono: <input type="tel" min="10" max="10" required><br>
+            Email: <input type="email" name="email" required><br>
+        </section> <!--Datos usuario-->
+
+        <section class="datosPastel">
+            <h2>Selecciona sabor (es)</h2>
+            <input type="checkbox" name="chocolate"> Chocolate <br>
+		    <input type="checkbox" name="supremo"> Chocolate Supremo <br>
+            <input type="checkbox" name="cafe"> Chocolate y café <br>
+		    <input type="checkbox" name="blanco"> Chocolate blanco <br>
+            <input type="checkbox" name="mexicano"> Chocolate mexicano <br>
+		    <input type="checkbox" name="tresLeches"> Tres Leches <br>
+            <input type="checkbox" name="fresas"> Fresas con crema <br>
+		    <input type="checkbox" name="zarzamora"> Zarzamora con queso <br>
+		    <input type="checkbox" name="Nueces"> Nueces <br>
+        </section> <!--Datos pastel-->
+
+        <section class="datosAdornos">
+            <h2>Selecciona adorno (s)</h2>
+            <input type="checkbox" name="batida"> Crema batida <br>
+		    <input type="checkbox" name="fruta"> Fruta <br>
+            <input type="checkbox" name="chispascol"> Chispas de colores <br>
+		    <input type="checkbox" name="chispasch"> Chispas de chocolate <br>
+            <input type="checkbox" name="kisses"> Kisses <br>
+		    <input type="checkbox" name="myms"> M&Ms <br>
+            <input type="checkbox" name="rosas"> Rosas <br>
+		    <input type="checkbox" name="globos"> Globos <br>
+            <input type="checkbox" name="tubos"> Tubos de chocolate <br>
+            <input type="checkbox" name="granos"> Sin adornos adicionales <br>
+        </section> <!--Datos adornos-->
+        <br>
+        <section class="final">
+            <p>¿Instrucciones adicionales?
+            <input type="text"></p>
+            <input type="submit" value="Enviar pedido">
+            <input type="reset" value="Reiniciar pedido">
+        </section> <!--Final-->
+    </form>
+
+    <footer class="footer">
+        <p>Nos encontramos en: Calle Falsa 123, Col X, Estado Y</p>
+        <p>Contáctanos: 52 00 00 00 00</p>
+        <p>Nuestro horario de atención es de 10:00 AM a 08:00 PM</p>
+    </footer>
+</body>
+</html>
